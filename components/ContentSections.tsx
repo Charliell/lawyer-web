@@ -20,8 +20,8 @@ const servicesList: Service[] = [
     iconName: 'Shield'
   },
   {
-    title: '房地产与建设工程',
-    description: '土地使用权出让、项目开发建设、融资、预售、物业管理等法律业务。',
+    title: '婚姻家事与财富传承',
+    description: '提供婚前财产协议、离婚诉讼、家族信托及财富传承规划等私密性高的高端服务。',
     iconName: 'Users'
   },
   {
@@ -46,8 +46,8 @@ export const Services: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl font-serif font-bold text-primary-900 mb-4">专业领域</h2>
-          <div className="w-24 h-1 bg-accent-500 mx-auto mb-6"></div>
-          <p className="text-slate-600">我们深耕法律行业多年，在以下领域积累了丰富的实战经验，致力于为客户提供高效、精准的法律服务。</p>
+          <div className="w-24 h-1 bg-accent-600 mx-auto mb-6"></div>
+          <p className="text-slate-600">我们深耕法律行业多年，在以下领域积累了丰富的实战经验，致力于为客户提供高效、精准且具人文关怀的法律服务。</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {servicesList.map((service, index) => {
@@ -75,13 +75,13 @@ export const About: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row items-center gap-16">
           <div className="lg:w-1/2 relative">
-            <div className="absolute -top-4 -left-4 w-24 h-24 bg-accent-200 rounded-tl-3xl z-0"></div>
+            <div className="absolute -top-4 -left-4 w-24 h-24 bg-accent-100 rounded-tl-3xl z-0"></div>
             <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-primary-200 rounded-br-3xl z-0"></div>
-            {/* Placeholder for professional headshot */}
+            {/* Updated to a professional female lawyer image */}
             <img 
-              src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=2340&auto=format&fit=crop" 
+              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=2338&auto=format&fit=crop" 
               alt="Li Mingzhe" 
-              className="relative z-10 w-full h-[500px] object-cover rounded-lg shadow-2xl grayscale hover:grayscale-0 transition-all duration-700"
+              className="relative z-10 w-full h-[500px] object-cover rounded-lg shadow-2xl grayscale-[20%] hover:grayscale-0 transition-all duration-700"
             />
           </div>
           <div className="lg:w-1/2 space-y-6">
@@ -90,14 +90,14 @@ export const About: React.FC = () => {
             </h2>
             <h3 className="text-xl text-accent-600 font-medium">资深合伙人 | 15年+ 执业经验</h3>
             <p className="text-slate-600 leading-relaxed">
-              李明哲律师毕业于中国政法大学，获法学硕士学位。自2008年执业以来，专注于处理复杂的商事诉讼与非诉业务。
+              李明哲律师毕业于中国政法大学，获法学硕士学位。自2008年执业以来，她始终专注于处理复杂的商事诉讼与非诉业务，并深耕家族财富管理领域。
             </p>
             <p className="text-slate-600 leading-relaxed">
-              他曾担任多家上市公司的常年法律顾问，不仅在法庭上具有出色的辩护能力，更擅长从商业角度为客户规避风险。李律师坚持“受人之托，忠人之事”的执业理念，以严谨的逻辑和专业的素养赢得了客户的广泛信赖。
+              作为一名资深女性律师，她以细腻的视角和严谨的逻辑著称。她曾担任多家上市公司的常年法律顾问，擅长在激烈的商业博弈中寻找平衡点，为客户规避风险。李律师坚持“专业致胜，温情服务”的执业理念，赢得了客户的广泛信赖。
             </p>
             
             <div className="grid grid-cols-2 gap-6 pt-4">
-              <div className="border-l-4 border-accent-500 pl-4">
+              <div className="border-l-4 border-accent-600 pl-4">
                 <div className="text-3xl font-bold text-primary-900">500+</div>
                 <div className="text-sm text-slate-500">成功案例</div>
               </div>
@@ -123,7 +123,7 @@ export const Contact: React.FC = () => {
             <div>
               <h2 className="text-3xl font-serif font-bold mb-4">联系我们</h2>
               <p className="text-primary-100">
-                如果您有任何法律问题，欢迎随时与我们联系。我们将尽快回复您的咨询。
+                如果您有任何法律问题，欢迎随时与我们联系。我们将以最专业的态度回复您的咨询。
               </p>
             </div>
             
@@ -194,12 +194,12 @@ export const Contact: React.FC = () => {
 // --- Footer Section ---
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-slate-950 text-slate-400 py-12 border-t border-slate-900">
+    <footer className="bg-primary-950 text-slate-400 py-12 border-t border-slate-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
-            <span className="text-2xl font-serif font-bold text-white">李明哲律师</span>
-            <p className="text-sm mt-2">以法为盾，护您周全。</p>
+            <span className="text-2xl font-serif font-bold text-slate-200">李明哲律师</span>
+            <p className="text-sm mt-2 text-slate-500">刚柔并济，专业致胜。</p>
           </div>
           <div className="flex space-x-6 text-sm">
             <a href="#" className="hover:text-white transition-colors">隐私政策</a>
